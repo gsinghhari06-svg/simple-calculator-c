@@ -1,0 +1,29 @@
+
+name: C Calculator Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GCC
+        run: sudo apt-get update && sudo apt-get install -y gcc
+
+      - name: Compile Calculator
+        run: gcc -Wall -Wextra -std=c11 calculator.c -o calculator
+
+      - name: Check executable
+        run: test -x calculator
+
+      - name: Build successful
+        run: echo "Calculator compiled successfully!"
