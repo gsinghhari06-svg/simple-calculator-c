@@ -1,0 +1,27 @@
+
+# Simple Calculator Using C
+
+## Introduction
+This project is a simple calculator developed
+using the C programming language.
+
+## Operations
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+
+## Concepts Used
+- Functions
+- Switch Statement
+- If-Else Statement
+- Do-While Loop
+
+## Software Requirements
+- C Programming
+- GCC Compiler
+- Programiz Online Compiler
+
+## Conclusion
+This project helps beginners understand
+functions and control structures in C.
